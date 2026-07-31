@@ -8,7 +8,7 @@
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
     >
 
-    <title>Club de la Excelencia | Diana Tique</title>
+    <title> Futura Club de la Excelencia | Vane Martinez</title>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
@@ -964,7 +964,7 @@
             text-align: center;
             background:
                 linear-gradient(180deg, rgba(0,0,0,.58), rgba(0,0,0,.86)),
-                url('FotoDianaTique.jpeg') center / cover no-repeat;
+                url('FotoVane.jpeg') center / cover no-repeat;
             opacity: 0;
             transition: opacity 1s ease;
         }
@@ -1243,7 +1243,7 @@
     ======================================================= -->
 
     <audio id="background-music" preload="auto" loop>
-        <source src="CancionDianaTique.mp3" type="audio/mpeg">
+        <source src="CancionVane.mp3" type="audio/mpeg">
         Tu navegador no puede reproducir el audio.
     </audio>
 
@@ -1268,11 +1268,11 @@
             Club de la Excelencia 2025
         </p>
 
-        <h1>Diana Tique</h1>
+        <h1>Vane Martinez</h1>
 
         <p class="welcome-message">
-            Hoy celebramos los resultados que alcanzaste, pero especialmente
-            la persona, la historia y la esencia que hicieron posible este logro.
+            Estás dando tus primeros pasos hacia Club Excelencia 2026, 
+            Lo mejor aún está por venir, y estamos seguros de que este es solo el comienzo de grandes logros.
         </p>
 
         <button
@@ -1383,8 +1383,8 @@
 
                     <div class="childhood-image">
                         <img
-                            src="FotoDianaTique.jpeg"
-                            alt="Diana Tique junto a su versión de niña"
+                            src="FotoVane.jpeg"
+                            alt="Vane Tique junto a su versión de niña"
                         >
                     </div>
 
@@ -1396,99 +1396,7 @@
                  MOMENTO DE LA CARTA
             =================================================== -->
 
-            <section class="slide letter-section" id="letter-section">
-
-                <div class="letter-intro">
-
-                    <span class="section-eyebrow">
-                        Hay alguien que quiso decirte algo
-                    </span>
-
-                    <h2>
-                Para ti...
-                </h2>
-
-                <p>
-                    Las palabras que estás a punto de leer fueron escritas por una persona muy especial para ti.
-                </p>
-
-                    <p>
-                        Hoy quiso hacer una pausa para regalarte algo que no tiene precio:
-                        <strong>unas palabras nacidas desde el corazón.</strong>
-                    </p>
-
-                    <p>
-                        Te invitamos a leerlas con calma.
-                        Porque algunas palabras no solo cuentan una historia...
-                        <strong>también nos recuerdan quiénes somos.</strong>
-                    </p>
-
-                </div>
-
-                <div class="envelope-stage">
-
-                    <div
-                        id="envelope"
-                        class="envelope"
-                        onclick="openLetterExperience()"
-                        role="button"
-                        tabindex="0"
-                        aria-label="Abrir carta especial"
-                        onkeydown="handleEnvelopeKeyboard(event)"
-                    >
-
-                        <div class="envelope-card">
-
-                            <small>
-                                Para alguien inolvidable
-                            </small>
-
-                            <span>
-                                Diana Tique
-                            </span>
-
-                        </div>
-
-                        <div class="envelope-body"></div>
-
-                        <div class="envelope-flap"></div>
-
-                        <div class="wax-seal">
-                            DT
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <button
-                    class="open-letter-button"
-                    onclick="openLetterExperience()"
-                >
-                    <i class="fa-regular fa-envelope-open"></i>
-                    Abrir mi carta
-                </button>
-
-                <p class="letter-hint">
-                    Este momento fue preparado especialmente para ti.
-                </p>
-
-                <div
-                    id="after-letter-message"
-                    class="after-letter-message"
-                >
-                    <p>
-                        “Detrás de cada gran logro hay una historia,
-                        una familia y muchas personas que siempre creyeron en ti.”
-
-                        <span>
-                            Club de la Excelencia 2025
-                        </span>
-                    </p>
-                </div>
-
-            </section>
-
+           
            
             <!-- CIERRE -->
 
@@ -1515,58 +1423,7 @@
          MODAL: IMAGEN GRANDE DE LA CARTA
     ======================================================= -->
 
-    <div
-        id="letter-modal"
-        class="letter-modal"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="letter-modal-title"
-        onclick="closeModalFromBackground(event)"
-    >
 
-        <div class="letter-modal-content">
-
-            <div class="modal-heading">
-
-                <span>
-                    Una carta para ti
-                </span>
-
-                <h3 id="letter-modal-title">
-                    Léela con calma. Estas palabras guardan mucho amor.
-                </h3>
-
-            </div>
-
-            <button
-                class="close-letter"
-                onclick="closeLetter()"
-                aria-label="Cerrar carta"
-            >
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-
-            <div
-                id="letter-image-wrapper"
-                class="letter-image-wrapper"
-                onclick="toggleLetterZoom()"
-            >
-
-                <!--
-                IMPORTANTE:
-                Cambia CartaMariaC.jpg por el archivo real de la carta.
-                -->
-
-                <img
-                    src="CartaDianaTique.png"
-                    alt="Carta dedicada a DianaTique"
-                >
-
-            </div>
-
-        </div>
-
-    </div>
 
     <script>
         const music = document.getElementById('background-music');
